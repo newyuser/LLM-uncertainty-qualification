@@ -99,6 +99,6 @@ for idx, row in tqdm(miss.iterrows(), desc="Processing"):
 
 jsonl_lines = df.to_json(orient='records', lines=True)
 
-with open(f'D:/ollama_fact/data/black_box_data/LLM_train_modified_res/{file_name}.jsonl', 'w') as f:
+with open(f'D:/LLM-uncertainty-qualification/data/black_box_data/LLM_train_res/{file}.jsonl'', 'w') as f:
     f.write(jsonl_lines)
 
